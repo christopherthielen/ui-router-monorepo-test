@@ -1,3 +1,17 @@
+# 2.0.0 (2021-11-28)
+[Compare `@uirouter/cypress-runner` versions 1.1.0 and 2.0.0](https://github.com/ui-router/cypress-runner/compare/1.1.0...2.0.0)
+
+### Features
+
+* **update_dependencies:** Add a repository_dispatch trigger ([f3630f7](https://github.com/ui-router/cypress-runner/commit/f3630f7))
+
+### BREAKING CHANGES
+
+* update cypress to 9.1.0 and update other deps
+
+
+
+
 # 1.1.0 (2020-02-25)
 [Compare `@uirouter/cypress-runner` versions 1.0.15 and 1.1.0](https://github.com/ui-router/cypress-runner/compare/1.0.15...1.1.0)
 
