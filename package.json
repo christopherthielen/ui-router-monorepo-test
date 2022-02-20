@@ -4,9 +4,22 @@
   "main": "index.js",
   "author": "Chris Thielen <github@sandgnat.com>",
   "license": "MIT",
-  "workspaces": [
-    "packages/*"
-  ],
+  "scripts": {
+    "build": "lerna run build"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/@types/jasmine*",
+      "**/@types/jest",
+      "**/@types/testing-library*",
+      "**/@types/react",
+      "**/@types/react-redux",
+      "**/webpack"
+    ]
+  },
   "private": true,
   "devDependencies": {
     "lerna": "^4.0.0"
