@@ -33,7 +33,7 @@
   "devDependencies": {
     "@babel/core": "^7.14.8",
     "@babel/preset-env": "^7.14.9",
-    "@uirouter/cypress-runner": "^1.1.0",
+    "@uirouter/cypress-runner": "^2.0.0",
     "babel-loader": "^8.2.2",
     "shx": "^0.3.3",
     "source-map-loader": "^1.1.3",
