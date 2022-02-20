@@ -132,5 +132,11 @@
         "repo": "https://github.com/ui-router/rx"
       }
     ]
-  }
+  },
+  "module": "dist/fesm2015/uirouter-angular.mjs",
+  "es2020": "dist/fesm2020/uirouter-angular.mjs",
+  "esm2020": "dist/esm2020/uirouter-angular.mjs",
+  "fesm2020": "dist/fesm2020/uirouter-angular.mjs",
+  "fesm2015": "dist/fesm2015/uirouter-angular.mjs",
+  "typings": "dist/uirouter-angular.d.ts"
 }
