@@ -207,7 +207,7 @@ export class UISrefStatus {
   ngAfterContentInit() {
     // Map each transition start event to a stream of:
     // start -> (success|error)
-    const transEvents$: Observable<TransEvt> = this._globals.start$.pipe(
+    const transEvents$: Observable<TransEvt> = (this._globals.start$ as unknown as Observable<Transition>).pipe(
       switchMap((trans: Transition) => {
         const event = (evt: string) => ({ evt, trans } as TransEvt);
 

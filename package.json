@@ -17,6 +17,7 @@
       "**/@types/testing-library*",
       "**/@types/react",
       "**/@types/react-redux",
+      "**/rxjs",
       "**/webpack"
     ]
   },
