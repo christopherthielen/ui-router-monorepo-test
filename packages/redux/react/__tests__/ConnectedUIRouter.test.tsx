@@ -1,20 +1,19 @@
 declare var jest, describe, it, expect;
 
-import * as React from "react";
-import { shallow, mount, render } from "enzyme";
 import {
+  memoryLocationPlugin,
+  ReactStateDeclaration,
   UIRouter,
   UIRouterReact,
-  ReactStateDeclaration,
   UIView,
-  memoryLocationPlugin,
-  servicesPlugin,
 } from "@uirouter/react";
-
-import { ConnectedUIRouter } from "../index";
+import { mount } from "enzyme";
+import * as React from "react";
 import { Provider } from "react-redux";
-
 import { createStore } from "redux";
+import { ConnectedUIRouter } from "../index";
+import * as reduxPluginModule from '../../core/reduxPlugin';
+
 
 function reducer(state) {
   return state;
@@ -82,7 +81,7 @@ describe("ConnectedUIRouter Component", () => {
 
   it("should register the correct plugins", () => {
     router = new UIRouterReact();
-    const spy = jest.spyOn(router, "plugin");
+    jest.spyOn(router, "plugin");
     router.wrapper = mount(
       <Provider store={store}>
         <ConnectedUIRouter {...defaultProps} router={router}>
@@ -98,8 +97,7 @@ describe("ConnectedUIRouter Component", () => {
   });
 
   it("should use store from context for the reduxPlugin", () => {
-    const uiRouterReduxCore = require("../../core");
-    const spy = jest.spyOn(uiRouterReduxCore, "createReduxPlugin");
+    const spy = jest.spyOn(reduxPluginModule, "createReduxPlugin");
     router = new UIRouterReact();
     wrapper = mount(
       <Provider store={store}>
