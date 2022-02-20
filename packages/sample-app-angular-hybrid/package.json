@@ -6,7 +6,7 @@
     "ng": "ng",
     "start": "ng serve --port 4000",
     "build": "ng build --configuration production",
-    "test": "run-s e2e",
+    "test": "npm run e2e",
     "lint": "ng lint",
     "e2e": "run-p -r start cypress",
     "cypress": "wait-on tcp:4000 && cypress run"

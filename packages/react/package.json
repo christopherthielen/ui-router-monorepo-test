@@ -14,7 +14,7 @@
     "clean": "shx rm -rf _bundles lib lib-esm build _doc",
     "compile": "npm run clean && tsc && tsc -m es6 --outDir lib-esm",
     "bundle": "cross-env NODE_ENV=production webpack",
-    "build": "run-s compile bundle fixmaps:*",
+    "build": "npm run compile && npm run bundle && npm run fixmaps:lib && npm run fixmaps:bundle",
     "release": "release --deps @uirouter/core",
     "fixmaps:lib": "tweak_sourcemap_paths -a --include 'lib/**/*.js.map' 'lib-esm/**/*.js.map'",
     "fixmaps:bundle": "tweak_sourcemap_paths -a --include '_bundles/**/*.js.map'",
