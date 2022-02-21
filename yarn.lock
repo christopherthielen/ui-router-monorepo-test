@@ -3769,11 +3769,6 @@
   resolved "https://registry.yarnpkg.com/@uirouter/core/-/core-6.0.7.tgz#a66743dceb13a56d8908474ff891d63e5d5a2b01"
   integrity sha512-KUTJxL+6q0PiBnFx4/Z+Hsyg0pSGiaW5yZQeJmUxknecjpTbnXkLU8H2EqRn9N2B+qDRa7Jg8RcgeNDPY72O1w==
 
-"@uirouter/core@=6.0.1":
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/@uirouter/core/-/core-6.0.1.tgz#93b02a5d178a7ab7313f34b7b3f019a000d23396"
-  integrity sha512-mHCutiHtDDRKYmrJ92XPKDoSb2bgqaDyUpHdF4hUE+riwgkCvGdBjL8u+VDTcV3slBAk6B0LBIOIajjWkkObbQ==
-
 "@uirouter/publish-scripts@2.5.5":
   version "2.5.5"
   resolved "https://registry.yarnpkg.com/@uirouter/publish-scripts/-/publish-scripts-2.5.5.tgz#1b0d074db08a8ec5e72e4ab54a004ad2e4b4932a"
