@@ -11,8 +11,6 @@
   },
   "scripts": {
     "build": "true",
-    "test": "npm run test:downstream",
-    "test:downstream": "test_downstream_projects",
     "release": "release"
   },
   "bin": {
