@@ -5,6 +5,7 @@
   "author": "Chris Thielen <github@sandgnat.com>",
   "license": "MIT",
   "scripts": {
+    "clean": "lerna run clean --parallel",
     "build": "lerna run build",
     "test": "lerna run test"
   },
